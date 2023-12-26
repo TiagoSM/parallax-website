@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-size: 10px;
+}
+
+h1 {
+    
+    
+    background-color: aqua;
+}
+
+.parallax {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+}
+
+#future {
+    background-image: url('./src/future-header\ \(1\).jpg');
+}
+
+#eletric-car {
+    background-image: url('./src/eletric-car.jpg');
+}
+
+#artificial-intelligence {
+    background-image: url('./src/artificial-intelligence.jpg');
+}
+
+#renewable-energy {
+    background-image: url('./src/renewable-energy.jpg');
+}
+
+p {
+    
+    background-color: aqua;
+  
+}
