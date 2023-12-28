@@ -4,45 +4,50 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-    font-size: 10px;
-}
 
 h1 {
-    
-    
+    text-align: center;
+    background-color: aqua;
+}
+
+
+#future {
+    background-image: url("./src/Mobile/cidade-do-futuro_mb.jpeg");
+    height: 100vh;
+}
+
+#eletric-car img {
+    background-image: url("./src/Mobile/eletric-car_mb.jpeg");
+    height: 100vh;
+}
+
+#artificial-intelligence img {
+    background-image: url("./src/Mobile/cidade-do-futuro_mb.jpeg");
+    height: 100vh;
+}
+
+#renewable-energy img {
+    background-image: url("./src/Mobile/cidade-do-futuro_mb.jpeg");
+    height: 100vh;
+}
+
+p {
+    text-align: center;
     background-color: aqua;
 }
 
 .parallax {
-    width: 100%;
-    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-
-    height: 100%;
 }
 
-#future {
-    background-image: url('./src/future-header\ \(1\).jpg');
-}
+@media (min-width: 768px) {
 
-#eletric-car {
-    background-image: url('./src/eletric-car.jpg');
-}
-
-#artificial-intelligence {
-    background-image: url('./src/artificial-intelligence.jpg');
-}
-
-#renewable-energy {
-    background-image: url('./src/renewable-energy.jpg');
-}
-
-p {
-    
-    background-color: aqua;
-  
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 100vh;
+    }
 }
