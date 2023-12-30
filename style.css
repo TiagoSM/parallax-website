@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --gray:#818581;
+    --black: #2c2c2c;
+    --white: #ffffff;
+    --red: #ff0000;
+    --blue: #0000ff;
+}
+
 body, html {
     height: 100%;
     font-size: 16px;
@@ -11,7 +19,9 @@ body, html {
 
 h1 {
     text-align: center;
-    background-color: aqua;
+    background-color: var(--gray);
+    padding: 5%;
+    display: none;
 }
 
 h2 {
@@ -20,48 +30,86 @@ h2 {
     display: block;
 }
 
+h3 {
+    text-align: center;
+    padding-top: 5%;
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--black);
+}
+
+footer p {
+    color: var(--black);
+}
+
+footer ul {
+    padding: 5%;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer ul li {
+    padding-bottom: 3%;
+}
+
+footer ul a {
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--blue);
+}
+
 #header p {
     position: absolute;
     z-index: 1;
     transform: translate(-50%, -50%);
     top: 40%;
     left: 50%;
-    padding: 1em; /* Espaçamento interno dentro do fundo */
+    padding: 1em;
     border-radius: .75em;
-    outline: #818581 solid .25em;
+    outline:  var(--gray) solid .25em;
     outline-offset: .25em;
-    background-color: #2c2c2c;
-    color: #ffffff;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 p {
     text-align: center;
-    background-color: aqua;
+    background-color: var(--gray);
+    padding: 5%;
     font-size: 1.5em;
 }
 
 #future {
     position: relative;
-    background-image: url("./src/Mobile/town-of-future_mb.jpeg");
+    background-image: url("./src/town-of-future_mb.jpeg");
     height: 80vw;
     opacity: .7;
 }
 
 #eletric-car {
-    background-image: url("./src/Mobile/eletric-car_mb.jpeg");
+    background-image: url("./src/eletric-car_mb.jpeg");
     height: 50vw;
     filter: hue-rotate(45deg);
 }
 
 #artificial-intelligence {
-    background-image: url("./src/Mobile/artificial-intelligence_mb.jpeg");
-    height: 35vw;
+    background-image: url("./src/artificial-intelligence_mb.jpeg");
+    height: 50vw;
 
 }
 
 #renewable-energy {
-    background-image: url("./src/Mobile/renewable-energy_mb.jpeg");
-    height: 40vw;
+    background-image: url("./src/renewable-energy_mb.jpeg");
+    height: 60vw;
 }
 
 .parallax {
@@ -72,6 +120,10 @@ p {
 }
 
 @media (min-width: 768px) {
+
+    h1 {
+        display: block;
+    }
 
     h2 {
         display: none;
