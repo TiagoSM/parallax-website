@@ -10,6 +10,7 @@
     --white: #ffffff;
     --red: #ff0000;
     --blue: #0000ff;
+    --darkgray: #A9A9A9;
 }
 
 body, html {
@@ -18,9 +19,6 @@ body, html {
 }
 
 h1 {
-    text-align: center;
-    background-color: var(--gray);
-    padding: 5%;
     display: none;
 }
 
@@ -42,6 +40,7 @@ footer {
 
 footer p {
     color: var(--black);
+    background-color: var(--darkgray);
 }
 
 footer ul {
@@ -120,9 +119,12 @@ p {
 }
 
 @media (min-width: 768px) {
-
+    
     h1 {
         display: block;
+        text-align: center;
+        background-color: var(--gray);
+        padding: 3%;
     }
 
     h2 {
@@ -130,11 +132,54 @@ p {
     }
 
     p {
+        padding: 4%;
         font-size: 2em;
     }
 
     .parallax {
         background-attachment: fixed;
     }
+
+    h3 {
+        padding-top: 5%;
+    }
     
+    footer p {
+        font-size: 1.25em;
+        padding: 2%;
+    }
+
+    footer h3 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    footer ul {
+        padding: 2%;
+    }
+    
+    footer ul li {
+        padding-bottom: 1%;
+    }
+    
+    #header p {
+        top: 55%;
+    }
+    
+    #future {
+        height: 50vw;
+    }
+    
+    #eletric-car {
+        height: 40vw;
+    }
+    
+    #artificial-intelligence {
+        height: 35vw;
+    
+    }
+    
+    #renewable-energy {
+        height: 40vw;
+    }
 }
